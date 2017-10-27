@@ -4,6 +4,7 @@ gns3server:
   ports:
     - "3080:3080"
     - "5000-5020:5000-5020"
+    - "5900-5920:5900-5920"
   volumes:
     - ./docker:/var/lib/docker
     - ./GNS3:/root/GNS3
