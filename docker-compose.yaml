@@ -1,0 +1,11 @@
+gns3server:
+  image: soekarmana/gns3-server
+  container_name: gns3-server
+  ports:
+    - "3080:3080"
+    - "5000-5020:5000-5020"
+  volumes:
+    - ./docker:/var/lib/docker
+    - ./GNS3:/root/GNS3
+  privileged: true
+  restart: always
