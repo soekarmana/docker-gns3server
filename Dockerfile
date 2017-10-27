@@ -1,8 +1,7 @@
 # Download base image ubuntu 16.04
 FROM blitznote/debootstrap-amd64:16.04
 # Update Software repository
-RUN echo 'Acquire::HTTP::Proxy "http://172.17.0.1:3142";' >> /etc/apt/apt.conf.d/01proxy \
- && apt-get update
+RUN apt-get update
 # install depedencies
 RUN apt-get install  --no-install-recommends -y qemu-kvm libvirt-bin bridge-utils cpu-checker locales \
                                                 python-pip python-setuptools python-wheel && \
