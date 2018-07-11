@@ -1,5 +1,5 @@
 gns3server:
-  image: soekarmana/gns3-server
+  image: soekarmana/docker-gns3server
   container_name: gns3-server
   ports:
     - "3080:3080"
